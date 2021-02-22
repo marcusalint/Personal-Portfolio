@@ -1,15 +1,26 @@
 import React from 'react'
+import './Sidebar.scss';
 
 const Sidebar = () => {
   return (
-    <nav>
-      <ul>
-        <li>Projects</li>
-        <li>Contact</li>
-        <li>Random1</li>
-        <li>Random</li>
-      </ul>
-    </nav>
+    <div>
+      <nav>
+        <ul>
+          <li>
+            hello
+          </li>
+          <li>
+            yoyo
+          </li>
+          <li>
+            asdasdas
+          </li>
+          <li>
+            dasdas
+          </li>
+        </ul>
+      </nav>
+    </div>
   )
 }
 
