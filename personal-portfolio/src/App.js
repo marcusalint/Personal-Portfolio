@@ -8,14 +8,21 @@ import {
   Link,
   Route
 } from 'react-router-dom'
+import Projects from './components/Projects';
 
 function App() {
   return (
     <Router>
-      <Sidebar />
+      <div>
+        <Sidebar />
+      </div>
+      <div>
       <Switch>
         <Route path="/home" exact component={Home} />
+        <Route path="/projects" exact component={Projects} />
       </Switch>
+      </div>
+
     </Router>
   );
 }
