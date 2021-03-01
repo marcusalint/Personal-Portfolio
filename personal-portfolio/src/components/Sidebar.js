@@ -15,8 +15,9 @@ import { FaHome,
 const Sidebar = () => {
   return (
     <Router>
-      <div>
+      <div className="sidebar">
         <nav>
+          <div className="nav-links">
           <ul>
             <li>
               <FaHome />
@@ -28,6 +29,7 @@ const Sidebar = () => {
               <FaFolder />
             </li>
           </ul>
+          </div>
         </nav>
       </div>
     </Router>
