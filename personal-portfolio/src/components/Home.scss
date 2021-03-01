@@ -1,0 +1,28 @@
+// scss variable(s)
+@mixin home--button {
+  border-color: #08FDD8;
+  padding: 2em 5em;
+  border-radius: 10px;
+  color: #08FDD8;
+  background-color: #1D1D1D;
+}
+
+
+h1 {
+  color: white;
+  font-size: 70px;
+}
+
+.home {
+  margin: 30em 20em;
+  
+}
+
+#project--button {
+  @include home--button()
+}
+
+#contact--button {
+  @include home--button();
+  margin-left: 6em;
+}
