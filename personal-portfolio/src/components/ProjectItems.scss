@@ -1,0 +1,16 @@
+.Project--Items {
+  display: flex;
+}
+
+.Project--Card {
+  flex-direction: row;
+  margin-right: 2em;
+  padding: 2em 1em;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #08FDD8;
+  border-radius: 10px;
+  background-color: #efefef;
+  text-align: center;
+
+}
