@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import Sidebar from './components/Sidebar'
+import Sidebar from './components/Sidebar';
 import Home from './components/Home';
 import {
   BrowserRouter as Router,
   Switch,
   Link,
   Route
-} from 'react-router-dom'
+} from 'react-router-dom';
 import Projects from './components/Projects';
 
 function App() {
