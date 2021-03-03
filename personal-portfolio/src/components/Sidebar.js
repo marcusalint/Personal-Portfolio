@@ -14,25 +14,25 @@ import { FaHome,
 
 const Sidebar = () => {
   return (
-    <Router>
+    // <Router>
       <div className="sidebar">
         <nav>
           <div className="nav-links">
-          <ul>
-            <li>
-              <FaHome />
-            </li>
-            <li>
-              <FaEnvelopeSquare />
-            </li>
-            <li>
-              <FaFolder />
-            </li>
+          <ul className="Nav--Container">
+            <button className="Nav--Item">
+             <Link to="/home">
+               <FaHome />
+             </Link>
+            </button>
+            <button className="Nav--Item">
+             <Link to="/projects">
+               <FaFolder />
+             </Link>
+            </button>
           </ul>
           </div>
         </nav>
       </div>
-    </Router>
   )
 }
 
