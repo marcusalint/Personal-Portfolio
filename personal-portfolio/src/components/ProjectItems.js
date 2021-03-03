@@ -7,7 +7,7 @@ const ProjectItems = () => {
   {
     id: '1',
     name: "ReLeaf",
-    image: "https://via.placeholder.com/150",
+    image: "https://i.imgur.com/l00Hbky.png",
     description: "Releaf is a crowdfunding single page web platform for natural disaster victims. Users are able to create a campaign or search and donate to those in need.",
     githubUrl: ''
     },
@@ -51,7 +51,7 @@ const ProjectItems = () => {
     xs={9} >
     {projects.map((project) => (
       <div className="Project--Card">
-        <img src={project.image} />
+        <img src={project.image} className="Item--Main--Image"/>
         <p>{project.name}</p>
         <p>{project.description}</p>
       </div>
