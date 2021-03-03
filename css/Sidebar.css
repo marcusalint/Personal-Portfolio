@@ -1,6 +1,8 @@
 .sidebar {
   height: 100vh;
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #464749;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -13,15 +15,19 @@
   position: fixed;
 }
 
-li {
+.Nav--Container {
+  position: absolute;
+  margin: auto;
   list-style-type: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   color: #f1f1f1;
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+.Nav--Item {
+  margin-bottom: 1em;
+  margin-right: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: #08FDD8;
 }
