@@ -1,6 +1,6 @@
 .sidebar {
   height: 100vh;
-  display: inline-block;
+  display: flex;
   background-color: #464749;
   flex-direction: column;
   justify-content: center;
@@ -8,12 +8,22 @@
   position: fixed;
 }
 
-li {
+.Nav--Container {
+  
+  position: absolute;
+  margin: auto;
   list-style-type: none;
-  align-items: center;
-  justify-content: space-between;
   color: #f1f1f1;
   margin-top: 1em;
   margin-bottom: 1em; 
+  
 }
 
+.Nav--Item {
+  margin-bottom: 1em;
+  margin-right: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: #08FDD8;
+  
+}
