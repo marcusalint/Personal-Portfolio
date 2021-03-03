@@ -18,8 +18,8 @@ function App() {
       </div>
       <div>
       <Switch>
-        <Route path="/home" exact component={Home} />
-        <Route path="/projects" exact component={Projects} />
+        <Route  path="/home" exact component={Home} />
+        <Route  path="/projects" exact component={Projects} />
       </Switch>
       </div>
 
