@@ -14,31 +14,31 @@ const ProjectItems = () => {
     {
     id: '2',
     name: "Mapper",
-    image: "https://via.placeholder.com/150",
+    image: "https://i.imgur.com/gpZt2Hf.png",
     description: "Mapper is a web app that utilizes the Google Maps Api to allow users to create and save maps with custom markers, each marker having its own title and description. Users can favourite their own or other user generated maps as well contributing to other user’s maps."
   },
   {
     id: '3',
     name: "Scheduler",
-    image: "https://via.placeholder.com/150",
+    image: "https://raw.githubusercontent.com/marcusalint/scheduler/master/Images/Regular%20View%20of%20Appointments.png",
     description: "Web application utilizing React built-in and custom hooks that allows users to add, edit and delete appointments."
   },
   {
     id: '4',
     name: "Jungle Rails",
-    image: "https://via.placeholder.com/150",
+    image: "https://raw.githubusercontent.com/marcusalint/jungle-rails/master/docs/front-page.png",
     description: "A mini e-commerce application built with Rails 4.2."
   },
   {
     id: '5',
     name: "Tweeter",
-    image: "https://via.placeholder.com/150",
+    image: "https://raw.githubusercontent.com/marcusalint/scheduler/master/Images/Form%20Validation%20and%20Interview%20Cancellation.png",
     description: "Single page Twitter clone application"
   },
   {
     id: '6',
     name: "TinyApp",
-    image: "https://via.placeholder.com/150",
+    image: "https://raw.githubusercontent.com/marcusalint/scheduler/master/Images/Book%20Interview.png",
     description: "TinyApp is a full stack web application built with Node and Express that allows users to shorten long URLs (à la bit.ly)."
   },
    
@@ -55,6 +55,11 @@ const ProjectItems = () => {
         <p>{project.name}</p>
         <p>{project.description}</p>
       </div>
+      
+
+
+
+
       
     ))}
   </Grid>
