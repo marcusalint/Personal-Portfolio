@@ -15,24 +15,31 @@ import { FaHome,
 const Sidebar = () => {
   return (
     // <Router>
+
       <div className="sidebar">
         <nav>
           <div className="nav-links">
-          <ul className="Nav--Container">
-            <button className="Nav--Item">
+          <ul id="Nav--Container">
+            <li className="Nav--Item">
              <Link to="/home">
-               <FaHome />
+               <FaHome className="Icon"/>
              </Link>
-            </button>
-            <button className="Nav--Item">
+            </li>
+            <li className="Nav--Item">
              <Link to="/projects">
-               <FaFolder />
+               <FaFolder className="Icon"/>
              </Link>
-            </button>
+            </li>
+            <li className="Nav--Item">
+             <Link to="/projects">
+               <FaFolder className="Icon"/>
+             </Link>
+            </li>
           </ul>
           </div>
         </nav>
       </div>
+      
   )
 }
 
