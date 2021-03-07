@@ -52,8 +52,10 @@ const ProjectItems = () => {
     {projects.map((project) => (
       <div className="Project--Card">
         <img src={project.image} className="Item--Main--Image"/>
-        <p>{project.name}</p>
-        <p>{project.description}</p>
+        <div className="Card--Text">
+          <p>{project.name}</p>
+          <p>{project.description}</p>
+        </div>
       </div>
       
 
