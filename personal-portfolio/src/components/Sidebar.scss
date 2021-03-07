@@ -3,27 +3,42 @@
   display: flex;
   background-color: #424242;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   width: 6em;
   position: fixed;
+  margin-top: 0;
 }
 
 .Nav--Container {
   
   position: absolute;
-  margin: auto;
+  // margin: auto;
   list-style-type: none;
-  color: #f1f1f1;
+  // color: #f1f1f1;
   margin-top: 1em;
   margin-bottom: 1em; 
+  margin-bottom: 10em;
   
 }
 
 .Nav--Item {
+  list-style-type: none;
   margin-bottom: 1em;
   margin-right: 1em;
-  padding-top: 1em;
+  padding-top: 3em;
   padding-bottom: 1em;
-  color: #08FDD8;
+  background-color: #424242;
+  color: #57d9a3;
+
+  &:visited {
+    text-decoration: none;
+    color: white;
+  }
   
+  
+}
+
+.Icon {
+  color: #08FDD8;
+  font-size: 25px;
 }
