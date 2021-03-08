@@ -1,11 +1,11 @@
 .Project--Items {
   display: flex;
   margin-bottom: 2em;
-  margin-top: 2em;
+  // margin-top: 1em;
 }
 
 .Project--Card {
-  flex-direction: row;
+  flex-direction: column;
   margin: 1em;
   color: #EEE;
 
@@ -14,16 +14,23 @@
   // border-color: #FFACFC;
   border-radius: 10px;
   background-color: #424242;
-  text-align: center;
+  text-align: flex-starte;
   max-height: 30em;
   max-width: 20em;
   padding: 1em;
-  min-width: 20em;
-  min-height: 20em;
+  // min-width: 20em;
+  // min-height: 20em;
+  width: 'max-content';
+
+  // &:hover {
+  //   transform: translate(0, -40px);
+  //   box-shadow: 10px black;
+  //   transition: .4s ease-in-out;
+  // }
 }
 
 .Item--Main--Image {
- padding-bottom: 2em;
+ 
  max-width: 100%; 
  border-radius: 10px;
  
@@ -31,11 +38,11 @@
 
 
 
- &:hover {
-   transform: translate(0, -50px);
-   box-shadow: 10px black;
-   transition: .4s ease-in-out;
- }
+//  &:hover {
+//    transform: translate(0, -50px);
+//    box-shadow: 10px black;
+//    transition: .4s ease-in-out;
+//  }
 }
 
 
@@ -44,7 +51,47 @@
   
 }
 
-//------------------------------------------------------
 
+//------ Modal Buttons ------- >
 
+#View--More--Button {
+  border-color: #08FDD8;
+  padding: 8px 12px;
+  border-radius: 4px;
+  color: #08FDD8;
+  background-color: #424242;
+  font-size: 16px;
 
+  &:hover {
+    color: black;
+    background-color: #08FDD8;
+  }
+
+}
+
+.View--Code--Button {
+  border-color: #08FDD8;
+  padding: 1em 2em;
+  border-radius: 4px;
+  color: black;
+  background-color: #08FDD8;
+  font-size: 14px;
+}
+
+.Cancel--Preview--Button {
+  border-color: red;
+  padding: 1em 2em;
+  border-radius: 4px;
+  color: white;
+  background-color: red;
+  font-size: 14px;
+  margin-left: 2em;
+  
+}
+
+//-------------Modal Elements Styling ---------------------- >
+
+.Modal--Main--Image {
+  max-height: 300px;
+  
+}
