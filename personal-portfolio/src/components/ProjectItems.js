@@ -3,10 +3,7 @@ import './ProjectItems.scss';
 import Modal from 'react-modal';
 import {Grid} from '@material-ui/core';
 
-const ProjectItems = () => {
-  const [modalIsOpen, setModalIsOpen] = useState(false)
-
-  const projects = [
+ const projects = [
   {
     id: '1',
     name: "ReLeaf",
@@ -47,34 +44,47 @@ const ProjectItems = () => {
    
 ]
 
- return (
-   <>
+Modal.setAppElement('#root')
+
+const ProjectItems = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const expandModal = (project) => {
+    setSelectedProject(project);
+    setModalIsOpen(true);
+}
+
+const closeModal = () => {
+    setSelectedProject(null);
+    setModalIsOpen(false);
+}
+
+ 
+
+return (
   <Grid container
     direction="row"
     className="Project--Items" 
     xs={9} >
     {projects.map((project) => (
-      <div className="Project--Card">
+      <div key={project.id}className="Project--Card">
         <img src={project.image} className="Item--Main--Image"/>
         <div className="Card--Text">
           <p>{project.name}</p>
           <p>{project.description}</p>
         </div>
-        <button onClick={() => setModalIsOpen(true)}>Open Modal</button>
-        <Modal isOpen={modalIsOpen}>
-          <h2>Modal Title</h2>
-          <p>Modal Body</p>
-          <div>
-            <button onClick={() => setModalIsOpen(false)}>Close Modal</button>
-          </div>
-        </Modal>
-
+        <button onClick={() => expandModal(project)}>OpenModal</button>
       </div>
-      
     ))}
+    <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
+      <h2>{selectedProject && selectedProject.name}</h2>
+        <p>{selectedProject && selectedProject.description}</p>
+        <div>
+          <button onClick={closeModal}>Close Modal</button>
+        </div>
+    </Modal>
   </Grid>
-
-  </>
 );
 }
 
