@@ -64,6 +64,9 @@ const ProjectItems = () => {
         <Modal isOpen={modalIsOpen}>
           <h2>Modal Title</h2>
           <p>Modal Body</p>
+          <div>
+            <button onClick={() => setModalIsOpen(false)}>Close Modal</button>
+          </div>
         </Modal>
 
       </div>
