@@ -18,6 +18,7 @@ const Sidebar = () => {
 
       <div className="sidebar">
         <nav>
+          {/* <img id="Logo" src="https://i.imgur.com/rS6mUCA.png"></img> */}
           <div className="nav-links">
           <ul id="Nav--Container">
             <li className="Nav--Item">
@@ -30,11 +31,7 @@ const Sidebar = () => {
                <FaFolder className="Icon"/>
              </Link>
             </li>
-            <li className="Nav--Item">
-             <Link to="/projects">
-               <FaFolder className="Icon"/>
-             </Link>
-            </li>
+            
           </ul>
           </div>
         </nav>
