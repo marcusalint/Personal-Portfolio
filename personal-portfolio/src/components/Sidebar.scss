@@ -9,7 +9,14 @@
   margin-top: 0;
 }
 
+#Logo {
+
+ max-width: 6em;
+margin-bottom: 22em;
+}
+
 .Nav--Container {
+  
   
   position: absolute;
   // margin: auto;
@@ -17,11 +24,12 @@
   // color: #f1f1f1;
   margin-top: 1em;
   margin-bottom: 1em; 
-  margin-bottom: 10em;
+  margin-bottom: 16em;
   
 }
 
 .Nav--Item {
+  
   list-style-type: none;
   margin-bottom: 1em;
   margin-right: 1em;
