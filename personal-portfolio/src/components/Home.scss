@@ -21,7 +21,12 @@ h1 {
 }
 
 #project--button {
-  @include home--button()
+  @include home--button();
+
+  &:hover {
+    color: black;
+    background-color: #08FDD8;
+  }
 }
 
 #contact--button {
