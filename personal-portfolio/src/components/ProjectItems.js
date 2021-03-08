@@ -1,8 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './ProjectItems.scss';
+import Modal from 'react-modal';
 import {Grid} from '@material-ui/core';
 
 const ProjectItems = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(false)
+
   const projects = [
   {
     id: '1',
@@ -45,6 +48,7 @@ const ProjectItems = () => {
 ]
 
  return (
+   <>
   <Grid container
     direction="row"
     className="Project--Items" 
@@ -56,15 +60,18 @@ const ProjectItems = () => {
           <p>{project.name}</p>
           <p>{project.description}</p>
         </div>
+        <button onClick={() => setModalIsOpen(true)}>Open Modal</button>
+        <Modal isOpen={modalIsOpen}>
+          <h2>Modal Title</h2>
+          <p>Modal Body</p>
+        </Modal>
+
       </div>
-      
-
-
-
-
       
     ))}
   </Grid>
+
+  </>
 );
 }
 
