@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Sidebar from './components/Sidebar';
 import Home from './components/Home';
+import MouseTrail from './components/MouseTrail'
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,7 +12,7 @@ import {
 import Projects from './components/Projects';
 
 function App() {
-  return (
+  return ( 
     <Router>
       <div>
         <Sidebar />
@@ -22,7 +23,6 @@ function App() {
         <Route  path="/projects" exact component={Projects} />
       </Switch>
       </div>
-
     </Router>
   );
 }
