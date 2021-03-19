@@ -16,9 +16,10 @@ function App() {
     <Router>
       <div>
         <Sidebar />
-        <MouseTrail />
+        
       </div>
       <div>
+      <MouseTrail />
       <Switch>
         <Route  path="/home" exact component={Home} />
         <Route  path="/projects" exact component={Projects} />
