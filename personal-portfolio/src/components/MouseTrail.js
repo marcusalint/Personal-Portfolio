@@ -1,4 +1,5 @@
 import React from 'react';
+import './MouseTrail.scss'
 
 /* Mouse trail adapted from a jQuery Codepen by Bryan C https://codepen.io/bryjch/pen/QEoXwA */
 
@@ -107,7 +108,7 @@ class Canvas extends React.Component {
 
   render = () => {
     const { cHeight, cWidth } = this.state;
-    return <canvas ref={this.canvas} width={cWidth} height={cHeight} />;
+    return <canvas className="canvas" ref={this.canvas} width={cWidth} height={cHeight} />;
   }
 }
 
