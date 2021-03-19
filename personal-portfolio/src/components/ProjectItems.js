@@ -87,8 +87,8 @@ return (
     style={
       {
         overlay: {
-          backgroundColor: 'rgba(33, 33, 33, 0.95)',
-          opacity: '0.9'
+          backgroundColor: 'rgba(66, 66, 66, 0.95)',
+          backdropFilter: 'blur(8px)'
         },
         content: {
           display: 'flex',
@@ -96,7 +96,7 @@ return (
           flexDirection: 'column',
           alignItems: 'center',
           color: '#eee',
-          backgroundColor: '#424242',
+          backgroundColor: '#212121',
           borderRadius: '10px',
           top: '140px',
           left: '100px',
