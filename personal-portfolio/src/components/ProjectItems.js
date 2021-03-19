@@ -69,6 +69,7 @@ const closeModal = () => {
 
 return (
   <Grid container
+    
     direction="row"
     className="Project--Items" 
     xs={9} >
