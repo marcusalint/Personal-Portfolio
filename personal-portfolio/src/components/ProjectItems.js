@@ -88,9 +88,10 @@ return (
       {
         overlay: {
           backgroundColor: 'rgba(66, 66, 66, 0.95)',
-          backdropFilter: 'blur(8px)'
+          backdropFilter: 'blur(4px)'
         },
         content: {
+          borderColor: '#212121',
           display: 'flex',
           paddingTop: '2em',
           flexDirection: 'column',
