@@ -36,7 +36,6 @@ const Sidebar = () => {
              <FaEnvelopeSquare className="Icon"/>
              </Link>
             </li>
-            
           </ul>
           </div>
         </nav>
