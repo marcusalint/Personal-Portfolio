@@ -31,6 +31,11 @@ const Sidebar = () => {
                <FaFolder className="Icon"/>
              </Link>
             </li>
+            <li className="Nav--Item">
+             <Link to="/contact">
+             <FaEnvelopeSquare className="Icon"/>
+             </Link>
+            </li>
             
           </ul>
           </div>
