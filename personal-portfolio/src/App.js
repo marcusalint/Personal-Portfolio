@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Sidebar from './components/Sidebar';
 import Home from './components/Home';
-import Home from './components/Contact';
+import Contact from './components/Contact';
 import MouseTrail from './components/MouseTrail'
 import {
   BrowserRouter as Router,
