@@ -1,13 +1,12 @@
 @media all and (max-width: 768px) {
-  .Project--Items {
-    background-color: red !important;
-    
-  }
+  // .Project--Items {
+  //   background-color: red !important;
+  // }
 }
 
 
 .Project--Items {
-  display: flex;
+  display: grid;
   margin-bottom: 2em;
   // margin-top: 1em;
 }
