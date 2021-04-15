@@ -69,10 +69,13 @@ const closeModal = () => {
 
 return (
   <Grid container
-    
     direction="row"
     className="Project--Items" 
-    xs={9} >
+    xs={3} 
+    lg={9}
+    // justify="center"
+    // alignItems="center"
+    >
     {projects.map((project) => (
       <div key={project.id}className="Project--Card">
         <img src={project.image} className="Item--Main--Image"/>
