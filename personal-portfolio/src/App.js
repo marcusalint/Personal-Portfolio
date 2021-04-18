@@ -1,6 +1,7 @@
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import SidebarNew from './components/SidebarNew';
+import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Contact from './components/Contact';
@@ -14,10 +15,18 @@ import {
 import Projects from './components/Projects';
 
 function App() {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen)
+  }
+
   return ( 
     <Router>
       <div>
-        <Navbar /> 
+        <Sidebar isOpen={isOpen} toggle={toggle} /> 
+        <Navbar toggle={toggle}/> 
       </div>
       <div>
       <MouseTrail />
