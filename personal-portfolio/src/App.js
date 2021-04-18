@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import Sidebar from './components/Sidebar';
+import SidebarNew from './components/SidebarNew';
+import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Contact from './components/Contact';
 import MouseTrail from './components/MouseTrail'
@@ -16,8 +17,7 @@ function App() {
   return ( 
     <Router>
       <div>
-        <Sidebar />
-        
+        <Navbar /> 
       </div>
       <div>
       <MouseTrail />
