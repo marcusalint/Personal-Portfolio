@@ -10,14 +10,15 @@ import { FaHome,
    Route,
    Link 
  } from 'react-router-dom'; 
+ import {Navbar} from 'react-bootstrap';
 
 
 const Sidebar = () => {
   return (
-    // <Router>
-
-      <div className="sidebar">
-        <nav>
+    <div className="sidebar">
+      <Navbar
+        expand="lg"z
+        >
           {/* <img id="Logo" src="https://i.imgur.com/rS6mUCA.png"></img> */}
           <div className="nav-links">
           <ul id="Nav--Container">
@@ -38,9 +39,8 @@ const Sidebar = () => {
             </li>
           </ul>
           </div>
-        </nav>
-      </div>
-      
+        </Navbar>
+      </div> 
   )
 }
 
