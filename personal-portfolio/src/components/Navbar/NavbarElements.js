@@ -18,10 +18,7 @@ export const Nav=styled.nav`
 
   @media screeen and (max-width: 960px) {
     transition: 0.8s all ease;
-
-
   }
-
 `
 
 export const NavbarContainer = styled.div`
@@ -29,7 +26,7 @@ export const NavbarContainer = styled.div`
   justify-content: space-between;
   height: 80px;
   z-index: 1;
-  width: 100%;
+  width: 100vw;
   padding: 0 24px;
   max-width: 1100px;
 
