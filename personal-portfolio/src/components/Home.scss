@@ -11,14 +11,17 @@
 h1 {
   color: white;
   font-size: 80px;
+
 }
 
 .home {
-  // margin: 30em 20em;
-  margin-left: 15em;
-  // margin-top: 18em;
-  padding-top: 18em;
+  // // margin: 30em 20em;
+  // margin-left: 14em;
+  margin-top: 10em;
+  // padding-top: 18em;
   width: 100vw;
+  height: 800px;
+  text-align: center;
   
 }
 
@@ -31,7 +34,7 @@ h1 {
   }
 }
 
-#contact--button {
-  @include home--button();
-  margin-left: 6em;
-}
+// #contact--button {
+//   @include home--button();
+//   margin-left: 6em;
+// }
