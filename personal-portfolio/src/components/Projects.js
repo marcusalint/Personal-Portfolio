@@ -8,7 +8,7 @@ const Projects = () => {
     <>
     <div id="projects">
       
-      <h1 id="project--page--heading">PROJECTS</h1>
+      <h1 id="project--page--heading">Projects</h1>
       <ProjectsGrid />
     </div>
 
