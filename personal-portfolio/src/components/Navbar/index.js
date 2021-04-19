@@ -37,18 +37,22 @@ const Navbar = ({toggle}) => {
 
   return (
   <>
-    <Nav>
+    <Nav scrollNav={scrollNav}>
       <NavbarContainer>
-        <NavLogo to="/home" onClick={toggleHome}>ST</NavLogo>
+        <NavLogo onClick={toggleHome}>ST</NavLogo>
         <MobileIcon onClick={toggle}>
           <FaBars />
         </MobileIcon>
         <NavMenu>
           <NavItem>
-            <NavLinks to="/home">Home</NavLinks>
+            <NavLinks to="home"
+            smooth={true} duration={500} spy={true} offset={-80} activeClass="active"
+            >Home</NavLinks>
           </NavItem>
           <NavItem>
-            <NavLinks to="/projects">Projects</NavLinks>
+            <NavLinks to="projects"
+            smooth={true} duration={500} spy={true} exact='true' offset={-80}
+            >Projects</NavLinks>
           </NavItem>
         </NavMenu>
       </NavbarContainer>
