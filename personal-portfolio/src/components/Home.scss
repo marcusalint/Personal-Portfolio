@@ -1,17 +1,11 @@
 // scss variable(s)
 @mixin home--button {
+  margin-top: 2em;
   border-color: #08FDD8;
   padding: 2em 5em;
   border-radius: 10px;
   color: #08FDD8;
   background-color: #1D1D1D;
-}
-
-
-h1 {
-  color: white;
-  font-size: 80px;
-
 }
 
 .home {
@@ -24,6 +18,14 @@ h1 {
   text-align: center;
   
 }
+
+
+h1 {
+  color: white;
+  font-size: 60px;
+
+}
+
 
 #project--button {
   @include home--button();
