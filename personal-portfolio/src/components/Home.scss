@@ -8,15 +8,29 @@
   background-color: #1D1D1D;
 }
 
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: 40px !important;
+  }
+}
+
 .home {
   // // margin: 30em 20em;
   // margin-left: 14em;
-  margin-top: 10em;
+  // margin-top: 16em;
   // padding-top: 18em;
   width: 100vw;
   height: 800px;
-  text-align: center;
+  // border-bottom: 3px solid #01bf71
   
+  
+}
+
+.main {
+  padding-top: 12em;
+  text-align: center;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 
