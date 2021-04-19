@@ -16,27 +16,14 @@ import Projects from './components/Projects';
 
 function App() {
 
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => {
-    setIsOpen(!isOpen)
-  }
-
   return ( 
     <Router>
-      <div>
-        <Sidebar isOpen={isOpen} toggle={toggle} /> 
-        <Navbar toggle={toggle}/> 
-      </div>
-      <div>
-      <MouseTrail />
       <Switch>
         <Route  path="/home" exact component={Home} />
-        <Route  path="/projects" exact component={Projects} />
         <Route  path="/contact" exact component={Contact} />
       </Switch>
-      </div>
     </Router>
+  
   );
 }
 
