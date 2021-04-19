@@ -52,6 +52,19 @@ import {Grid} from '@material-ui/core';
 Modal.setAppElement('#root')
 
 const ProjectItems = () => {
+  const cardStyles ={
+    
+    margin: "1em",
+    color: "#EEE",
+    borderRadius: "10px",
+    backgroundColor: "#424242",
+    textAlign: "flex-start",
+    // maxHeight: "30em",
+    // maxWidth: "20em",
+    padding: "1em",
+    width: 'max-content'
+  }
+
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
 
@@ -65,26 +78,25 @@ const closeModal = () => {
     setModalIsOpen(false);
 }
 
- 
-
 return (
   <Grid container
     direction="row"
     className="Project--Items" 
-    xs={3} 
-    lg={9}
-    // justify="center"
-    // alignItems="center"
+    // lg={12}
+    // sm={6}
+    // spacing={12}
+    style={{justifyContent: "center"}}
+    
     >
     {projects.map((project) => (
-      <div key={project.id}className="Project--Card">
+      <Grid item xl={4} md={3} sm={6} xs={12} key={project.id} style={cardStyles}>
         <img src={project.image} className="Item--Main--Image"/>
         <div className="Card--Text">
           <h3>{project.name}</h3>
           <p>{project.description}</p>
         </div>
         <button id="View--More--Button" onClick={() => expandModal(project)}>View More</button>
-      </div>
+      </Grid>
     ))}
     <Modal isOpen={modalIsOpen} onRequestClose={closeModal}
     style={
