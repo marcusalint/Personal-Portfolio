@@ -75,7 +75,7 @@ export const NavItem = styled.div`
   height: 80px;
 `
 
-export const NavLinks = styled(LinkRouter)`
+export const NavLinks = styled(LinkSmoothScroll)`
   color: #fff;
   display: flex;
   align-items; center;
