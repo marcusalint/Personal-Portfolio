@@ -5,6 +5,7 @@ import Navbar from './Navbar';
 import Projects from './Projects';
 import {Link as LinkS} from 'react-scroll'; 
 import MouseTrail from './MouseTrail';
+import Particles from './Particles';
 
 
 
@@ -17,7 +18,8 @@ const Home = () => {
 
   return (
     <>
-    <MouseTrail />
+    {/* <MouseTrail /> */}
+    {/* <Particles /> */}
     <Sidebar isOpen={isOpen} toggle={toggle} /> 
     <Navbar toggle={toggle}/>
     <div name="home" className="home">
