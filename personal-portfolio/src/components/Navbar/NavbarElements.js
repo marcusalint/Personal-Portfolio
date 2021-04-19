@@ -7,9 +7,9 @@ import {Link as LinkSmoothScroll} from 'react-scroll'
 export const Nav=styled.nav`
   background: #000;
   height: 80px;
-  // margin-top: -80px;
+   margin-top: -80px;
   display: flex;
-  justify-conent: center;
+  justify-content: center;
   align-items: center;
   font-size: 1rem;
   position: sticky;
@@ -26,7 +26,7 @@ export const NavbarContainer = styled.div`
   justify-content: space-between;
   height: 80px;
   z-index: 1;
-  width: 100vw;
+  width: 100%;
   padding: 0 24px;
   max-width: 1100px;
 
@@ -63,7 +63,8 @@ export const NavMenu = styled.div`
   align-items: center;
   list-style: none;
   text-align: center;
-  margin-right: -22px;
+  margin-right: ;
+  padding-top: 3em;
 
 
   @media screen and (max-width: 758px) {
@@ -80,6 +81,7 @@ export const NavLinks = styled(LinkSmoothScroll)`
   display: flex;
   align-items; center;
   text-decoration: none;
+  margin-right: 1em;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
