@@ -5,7 +5,8 @@ import {Link as LinkRouter} from 'react-router-dom'
 import {Link as LinkSmoothScroll} from 'react-scroll'
 
 export const Nav=styled.nav`
-  background: #000;
+  background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
+  /* background: #000; */
   height: 80px;
    margin-top: -80px;
   display: flex;
@@ -39,7 +40,7 @@ export const NavLogo = styled(LinkRouter)`
   font-size: 1.5rem;
   display: flex;
   align-items: center;
-  margin-left: 24px;
+  /* margin-left: 24px; */
   font-weight: bold;
   text-decoration: none;
 `
@@ -63,9 +64,10 @@ export const NavMenu = styled.div`
   align-items: center;
   list-style: none;
   text-align: center;
-  margin-right: ;
+  /* margin-right: -22px; */
   padding-top: 3em;
-
+  margin-bottom: 0;
+  margin-right: 0;
 
   @media screen and (max-width: 758px) {
     display: none;
@@ -81,14 +83,16 @@ export const NavLinks = styled(LinkSmoothScroll)`
   display: flex;
   align-items; center;
   text-decoration: none;
-  margin-right: 1em;
-  padding: 0 1rem;
-  height: 100%;
+  margin-right: 2em;
+  /* margin-bottom: 2em; */
+  padding: 0 2rem;
+  height: 40%;
   cursor: pointer;
 
   &.active {
-    border-bottomL 3px solid #01bf71
+    border-bottom: 3px solid #01bf71
   }
+
 `
 
 export const NavBtn = styled.nav `
