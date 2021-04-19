@@ -37,6 +37,7 @@ class Canvas extends React.Component {
       false,
     );
 
+
     // If the device supports cursors, start animation.
     if (matchMedia('(pointer:fine)').matches) {
       this.startAnimation();
@@ -48,10 +49,14 @@ class Canvas extends React.Component {
     const ctx = canvas.getContext('2d');
 
     const points = [];
+    const pointTwos = [];
 
     const addPoint = (x, y) => {
       const point = new Point(x, y);
+      const pointTwo = new Point(x, y);
       points.push(point);
+      pointTwos.push(pointTwo);
+      
     };
 
     document.addEventListener('mousemove', ({ clientX, clientY }) => {
