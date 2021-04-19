@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './ProjectItems.scss';
 import Modal from 'react-modal';
 import {Grid} from '@material-ui/core';
@@ -52,8 +52,12 @@ import {Grid} from '@material-ui/core';
 Modal.setAppElement('#root')
 
 const ProjectItems = () => {
+
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
+
+
   const cardStyles ={
-    
     margin: "1em",
     color: "#EEE",
     borderRadius: "10px",
@@ -65,10 +69,8 @@ const ProjectItems = () => {
     width: 'max-content'
   }
 
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [selectedProject, setSelectedProject] = useState(null);
 
-  const expandModal = (project) => {
+const expandModal = (project) => {
     setSelectedProject(project);
     setModalIsOpen(true);
 }
@@ -87,15 +89,18 @@ return (
     // spacing={12}
     style={{justifyContent: "center"}}
     
+    
     >
     {projects.map((project) => (
-      <Grid item xl={4} md={3} sm={6} xs={12} key={project.id} style={cardStyles}>
-        <img src={project.image} className="Item--Main--Image"/>
-        <div className="Card--Text">
-          <h3>{project.name}</h3>
-          <p>{project.description}</p>
+      <Grid item xl={4} md={3} sm={6} xs={12} key={project.id} style={{backgroundImage: `url(${project.image})`, margin: "1em", textAlign: "center", padding: "1em", width: "100%", height: "18em", borderRadius: "10px", position: "relative", zIndex: "0"}}>
+        {/* <img src={project.image} className="Item--Main--Image"/> */}
+        <div id="Card--Overlay">
+          <div className="Card--Text">
+            <h3>{project.name}</h3>
+            <p>{project.description}</p>
+          </div>
+          <button id="View--More--Button" onClick={() => expandModal(project)}>View More</button>
         </div>
-        <button id="View--More--Button" onClick={() => expandModal(project)}>View More</button>
       </Grid>
     ))}
     <Modal isOpen={modalIsOpen} onRequestClose={closeModal}
