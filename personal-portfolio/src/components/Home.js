@@ -3,7 +3,7 @@ import './Home.scss';
 import Sidebar from './Sidebar';
 import Navbar from './Navbar';
 import Projects from './Projects';
-import {Link} from 'react-router-dom'; 
+import {Link as LinkS} from 'react-scroll'; 
 import MouseTrail from './MouseTrail';
 
 
@@ -23,7 +23,7 @@ const Home = () => {
     <div name="home" className="home">
       <h1>Hi, I'm Salar.</h1>
       <h1>Full Stack Developer.</h1>
-      <Link to="/projects"><button id="project--button">View Projects</button></Link>
+      <LinkS to="projects" smooth={true} duration={500} spy={true} offset={-80}><button id="project--button">View Projects</button></LinkS>
       {/* <button id="contact--button">Contact</button> */}
     </div>
     <Projects name="projects"/>
