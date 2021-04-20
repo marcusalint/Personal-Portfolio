@@ -2,13 +2,9 @@ import React, {useState, useEffect} from 'react';
 import './ProjectItems.scss';
 import Modal from 'react-modal';
 import {Grid} from '@material-ui/core';
-// // import {Carousel} from 'react-bootstrap/Carousel';
-// import { useSpringCarousel } from 'react-spring-carousel-js'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel, } from 'react-responsive-carousel';
-import {useMediaQuery} from './Hooks/useMediaQuery';
-
-
+import {useMediaQuery} from './hooks/useMediaQuery';
 
  const projects = [
   {
@@ -62,49 +58,59 @@ import {useMediaQuery} from './Hooks/useMediaQuery';
    
 ]
 
-const modalStyles = {
-  overlay: {
-          backgroundColor: 'rgba(66, 66, 66, 0.95)',
-          backdropFilter: 'blur(4px)',
-          transition: "0.4s ease-in",
-        },
-        content: {
-          borderColor: '#212121',
-          paddingTop: '2em',
-          paddingBottom: '2em',
-          paddingRight: '2em',
-          paddingLeft: '2em',
-          margin: "auto",
-          maxWidth: "40em",
-          // alignItems: 'flex-start',
-          color: '#eee',
-          backgroundColor: '#212121',
-          borderRadius: '4px',
-          top: '150px',
-          // left: '200x',
-          // right: '100px',
-          bottom: '200px',
-          transition: "0.4s ease-in",
-          // margin: "auto",
-        }
-}
 
 Modal.setAppElement('#root')
 
 const ProjectItems = () => {
 
+  //Breakpoints for media queries
+  const xsMedia = useMediaQuery('(min-width: 0px)');
+  const smMedia = useMediaQuery('(min-width: 600px)');
+  const mdMedia = useMediaQuery('(min-width: 960px)');
+  const lgMedia = useMediaQuery('(min-width: 1280px)');
+  const xlMedia = useMediaQuery('(min-width: 1920px)');
+
+  // Modal Styling
+  const modalStyles = {
+    container: (xsMedia, smMedia, mdMedia, lgMedia, xlMedia) => ({
+      overlay: {
+        backgroundColor: 'rgba(66, 66, 66, 0.95)',
+        backdropFilter: 'blur(4px)',
+        transition: "0.4s ease-in",
+      },
+      content: {
+        borderColor: '#212121',
+        paddingTop: '3em',
+        paddingBottom: '2em',
+        paddingRight: '2em',
+        paddingLeft: '2em',
+        margin: "auto",
+        maxWidth: "40em",
+        color: '#eee',
+        backgroundColor: '#212121',
+        borderRadius: '4px',
+        top: smMedia ? '150px' : '120px',
+        bottom: smMedia ? '200px' : 'auto',
+        transition: "0.4s ease-in",
+        // maxHeight: !smMedia ? "800px" : "450px"
+        }
+    })
+  }
+  
+  //States
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
 
-const expandModal = (project) => {
-    setSelectedProject(project);
-    setModalIsOpen(true);
-}
+  //Modal Functions
+  const expandModal = (project) => {
+      setSelectedProject(project);
+      setModalIsOpen(true);
+  }
 
-const closeModal = () => {
-    setSelectedProject(null);
-    setModalIsOpen(false);
-}
+  const closeModal = () => {
+      setSelectedProject(null);
+      setModalIsOpen(false);
+  }
 
 return (
   <Grid container
@@ -113,7 +119,9 @@ return (
     style={{justifyContent: "center"}}
     >
     {projects.map((project) => (
-      <Grid item xl={3} lg={3} md={3} sm={6} xs={12} key={project.id} style={{backgroundImage: `url(${project.image})`, textAlign: "flex-start", padding: "1em",margin: "1em", width: "100%", height: "20em", borderRadius: "4px", overflow: "hidden"}}>
+      <Grid item xl={3} lg={3} md={3} sm={6} xs={12} key={project.id} style={{
+        backgroundImage: `url(${project.image})`, textAlign: "flex-start", padding: "1em",margin: "1em", width: "100%", height: "20em", borderRadius: "4px", overflow: "hidden", 
+        }}>
         <div id="Card--Overlay">
           <div className="Card--Text">
             <h3>{project.name}</h3>
@@ -124,7 +132,7 @@ return (
       </Grid>
     ))}
     <Modal isOpen={modalIsOpen} onRequestClose={closeModal} 
-    style={modalStyles}
+    style={modalStyles.container(lgMedia)}
     >
     <div id="Modal--Container">
     <Carousel showThumbs={false} showArrows={true} className="Carousel">
@@ -132,18 +140,18 @@ return (
         <img className="Modal--Main--Image" src={selectedProject && selectedProject.image} />
         </div>
         <div>
-          <img src="https://i.picsum.photos/id/370/200/300.jpg?hmac=7gPWuhI1_LDcGkEssyW-1sPKu9NVl1KUoOs0nH7KXno" />
+          {/* <img src="https://i.picsum.photos/id/370/200/300.jpg?hmac=7gPWuhI1_LDcGkEssyW-1sPKu9NVl1KUoOs0nH7KXno" /> */}
         </div>
         <div>
-          <img src="https://i.picsum.photos/id/370/200/300.jpg?hmac=7gPWuhI1_LDcGkEssyW-1sPKu9NVl1KUoOs0nH7KXno" />           
+          {/* <img src="https://i.picsum.photos/id/370/200/300.jpg?hmac=7gPWuhI1_LDcGkEssyW-1sPKu9NVl1KUoOs0nH7KXno" />            */}
         </div>
     </Carousel>   
-      <div className="Modal--Text">
+      <div id="Modal--Text">
       <h2>{selectedProject && selectedProject.name}</h2>
         <p>Technologies: {selectedProject && selectedProject.technologies}</p>
         <p>{selectedProject && selectedProject.description}</p>
         </div>
-      <div>
+      <div className="Modal--Buttons">
         <a href={selectedProject && selectedProject.githubUrl}><button className="View--Code--Button">View Code</button></a>
         <button className="Cancel--Preview--Button" onClick={closeModal}>Close</button>
         </div>
