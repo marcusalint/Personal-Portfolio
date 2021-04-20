@@ -5,33 +5,7 @@
 }
 
 
-.Project--Items {
-  // display: grid;
-  // margin-bottom: 2em;
-  // margin-top: 1em;
-  // justify-content: center;
-  
-}
 
-.Project--Card {
-  // flex-direction: column;
-  // margin: 1em;
-  // color: #EEE;
-  // border-radius: 10px;
-  // background-color: #424242;
-  // text-align: flex-start;
-  // max-height: 30em;
-  // max-width: 20em;
-  // padding: 1em;
-  // width: 'max-content';
-  
-
-  // &:hover {
-  //   transform: translate(0, -40px);
-  //   box-shadow: 10px black;
-  //   transition: .4s ease-in-out;
-  // }
-}
 
 .Item--Main--Image {
  max-width: 100%; 
@@ -51,12 +25,12 @@
 #Card--Overlay {
   opacity: 0;
   padding: 1em;
-  border-radius: 10px;
-
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   margin: -1000px;
   padding: 1000px;
-
 
   &:hover {
     opacity: 0.9;
@@ -64,13 +38,7 @@
     color: white;
     background-Color: #212121;
     backdrop-filter: 'blur(20px)'
-
-    
-
-    
-
   }
-  
 }
 
 
@@ -78,6 +46,12 @@
 
 
 //------ Modal Buttons ------- >
+
+#Modal--Main {
+  
+}
+
+
 
 #View--More--Button {
   border-color: #08FDD8;
@@ -119,4 +93,25 @@
 .Modal--Main--Image {
   max-height: 300px;
   
+}
+
+.Modal--Text {
+  text-align: left;
+  max-width: 40em;
+}
+
+#Modal--Container {
+  // margin-left: 5em;
+  // margin-right: 5em;
+  // display: "inline-block"
+}
+
+.Carousel {
+  img {
+    max-height: 300px;
+  }
+}
+
+.Tech--Stack {
+
 }
