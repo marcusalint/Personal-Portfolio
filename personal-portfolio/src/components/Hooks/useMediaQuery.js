@@ -9,5 +9,6 @@ export const useMediaQuery = (query) => {
     mediaMatch.addListener(handler);
     return () => mediaMatch.removeListener(handler);
   });
+  console.log(matches, "this is the matches")
   return matches;
 };
