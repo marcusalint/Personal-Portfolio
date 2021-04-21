@@ -1,11 +1,12 @@
 // scss variable(s)
 @mixin home--button {
-  margin-top: 2em;
+  margin-top: 15em;
   border-color: #08FDD8;
   padding: 2em 5em;
   border-radius: 10px;
   color: #08FDD8;
   background-color: #1D1D1D;
+  font-size: 13px;
 
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 
@@ -25,6 +26,7 @@
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
     margin-top: 4em;
+    font-size: 13px;
 
   }
 
@@ -36,6 +38,7 @@
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
     margin-top: 10em;
+    font-size: 13px;
   }
 
   /* ----------- iPhone X ----------- */
@@ -46,10 +49,9 @@
     and (max-device-width: 812px) 
     and (-webkit-min-device-pixel-ratio: 3) { 
       margin-top: 14em;
+      font-size: 13px;
 
   }
-
-
 }
 
 @media all and (max-width: 768px) {
@@ -64,7 +66,8 @@
   // margin-top: 16em;
   // padding-top: 18em;
   width: 100vw;
-  height: 800px;
+  height: 100%;
+  
   // border-bottom: 3px solid #01bf71
   
   
