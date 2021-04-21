@@ -18,7 +18,7 @@ const Home = () => {
 
   return (
     <>
-    <MouseTrail />
+    {/* <MouseTrail /> */}
     {/* <Particles /> */}
     <Sidebar isOpen={isOpen} toggle={toggle} /> 
     <Navbar toggle={toggle}/>
