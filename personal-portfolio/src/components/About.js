@@ -10,11 +10,11 @@ const About = () => {
           <div className="Left--Main">
             <div className="Bio">
               <h1 style={{textAlign: "left"}}>About</h1>
-              <p style={{fontSize: "19px", lineHeight: "2em"}}>I'm a software developer who loves transforming cool ideas into scalable and responsive applications. </p>
+              <p style={{fontSize: "19px", lineHeight: "2em"}}>I'm a software developer who loves transforming cool ideas into scalable and responsive applications.</p>
             </div>
             <div className="Languages"> 
               <h2 className="Languages--Heading">Technologies</h2>
-              <p>React, Express, PostgresQL, NodeJS, Ruby, Rails. JQuery, HTML, SASS, CSS, Javascript, AJAX, APIs, Material-UI </p>
+              <p>React, Express, PostgresQL, NodeJS, Ruby, Rails. JQuery, HTML, SASS, CSS, Javascript, AJAX, APIs, Material-UI</p>
             </div>
             <div className="Resume--And--Contact">
               <div className="Contact">
