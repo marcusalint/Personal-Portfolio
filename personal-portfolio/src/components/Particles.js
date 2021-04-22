@@ -7,11 +7,11 @@ const HeroBackground = () => {
   return (
     <div>
     <Particles
-		className="Particles"
+		id="Particles"
     params={{
 	    "particles": {
 	        "number": {
-	            "value": 50
+	            "value": 50,
 	        },
 	        "size": {
 	            "value": 3
