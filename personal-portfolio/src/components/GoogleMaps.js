@@ -48,7 +48,6 @@ class SimpleMap extends Component {
   ];
 
     const mapHeight = 101
-    console.log(window.innerHeight, 'this is window innerheight')
 
     const googleMapsStyles = {
       height: `${mapHeight}vh`,
