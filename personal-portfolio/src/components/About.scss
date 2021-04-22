@@ -1,6 +1,267 @@
-// scss variable(s)
+/// About Page --------------------------- >
 
-@mixin resume--button {
+.About--Page {
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 1em;
+
+
+  /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+  /* Portrait and Landscape */
+  @media only screen 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    height: auto;
+    
+  }
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+  /* Portrait and Landscape */
+  @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    
+    
+
+  }
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+  /* Portrait and Landscape */
+  @media screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+
+  }
+
+  /* ----------- iPhone X ----------- */
+
+  /* Portrait and Landscape */
+  @media screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 812px) 
+    and (-webkit-min-device-pixel-ratio: 3) { 
+      // margin-top: 14em;
+      // font-size: 13px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: 40px !important;
+  }
+
+  
+}
+
+.Content--Container {
+  font-family: 'Raleway', sans-serif;
+  display: block;
+  height: 101vh;  
+  text-align: left;
+  cursor: none !important;
+  overflow: hidden;
+
+  /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+  /* Portrait and Landscape */
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    
+    
+  }
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+  /* Portrait and Landscape */
+  @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    
+  }
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+  /* Portrait and Landscape */
+  @media screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+  }
+
+  /* ----------- iPhone X ----------- */
+
+  /* Portrait and Landscape */
+  @media screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 812px) 
+    and (-webkit-min-device-pixel-ratio: 3) { 
+      // margin-top: 14em;
+
+  }
+}
+
+@media all and (max-width: 768px) {
+  h1 {
+    
+  }
+}
+
+
+
+.Left--Container {
+  background-color: rgb(33, 33, 33, 0.95);
+  width: 60em;
+  height: 101vh;
+  overflow: hidden;
+  border-radius: 4px;
+  display: block;
+  position: absolute;
+  z-index: 5;
+  pointer-events: none;
+
+  
+}
+
+.Left--Main {
+  max-width: 50em;
+  height: 900px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  
+
+     /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+  /* Portrait and Landscape */
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+  /* Portrait and Landscape */
+  @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+  /* Portrait and Landscape */
+  @media screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ----------- iPhone X ----------- */
+
+  /* Portrait and Landscape */
+  @media screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 812px) 
+    and (-webkit-min-device-pixel-ratio: 3) { 
+      // margin-top: 14em;
+      // font-size: 13px;
+      margin-left: 10px !important;
+      display: flex;
+      flex-direction: column;
+  }
+}
+
+@media all and (max-width: 768px) {
+  h1 {
+    // font-size: 40px !important;
+  }
+}
+
+  
+
+.Resume--And--Contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+
+       /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+  /* Portrait and Landscape */
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    display: inline-block;
+    margin-top: 0;
+
+    &.Contact--Heading {
+      font-size: 5px;
+    }
+
+    
+  }
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+  /* Portrait and Landscape */
+  @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    padding-left: 10px;
+    // height: 100vh;
+
+  }
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+  /* Portrait and Landscape */
+  @media screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    padding-left: 15px;
+  }
+
+  /* ----------- iPhone X ----------- */
+
+  /* Portrait and Landscape */
+  @media screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 812px) 
+    and (-webkit-min-device-pixel-ratio: 3) { 
+      // margin-top: 14em;
+      // font-size: 13px;
+  }
+}
+
+.View--Resume--Button {
   
   border-color: #08FDD8;
   padding: 2em 4em;
@@ -19,7 +280,17 @@
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
-
+    border-color: #08FDD8;
+    padding: 10px 5px;
+    border-radius: 4px;
+    color: black;
+    background-color: #08FDD8;
+    font-size: 20px;
+    cursor: pointer;
+    pointer-events: auto;
+    text-decoration: none;
+    // margin-top: 20px;
+    // margin-bottom: 20px;
   }
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
@@ -29,8 +300,8 @@
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
-    margin-top: 4em;
-    font-size: 13px;
+    top: 20px !important;
+    font-size: 20px;
 
   }
 
@@ -65,114 +336,114 @@
 
 
 
-.About--Page {
-  width: 100vw;
-  
-  height: 101vh;
-  overflow: hidden;
-  display: block;
-  // text-align: center;
-  
-  
 
-  h1 {
-    color: white;
-    // background-color: yellow;
-    text-align: center;
-  }
-
-  h2 {
-    color: white;
-  }
-
-  p {
-    color: white;
-  }
-}
-
-.Content--Container {
-  font-family: 'Raleway', sans-serif;
-  // display: flex; 
-  display: block;
-  height: 101vh;
-  // flex-direction: row;
-  // justify-content: space-between;
-  text-align: left;
-  // margin: "2em"
-  // margin-right: 4em;
-  // margin-left: 4em;
-  cursor: none !important;
-  
-  overflow: hidden;
-
-  
-  // background-color: blue;
-  // margin-left: auto;
-  // position: absolute;
-}
-
-
-
-.Left--Container {
-  background-color: rgb(33, 33, 33, 0.95);
-  width: 60em;
-  min-height: 101vh;
-  overflow: hidden;
-  // top: 10em;
-  // left: 5em; 
-  border-radius: 4px;
-  margin-right: 2em;
-  display: block;
-  position: absolute;
-  z-index: 5;
-  pointer-events: none;
-  // border-right-style: dotted;
-  // border-right-color: white;
-}
-
-.Left--Main {
-  margin-top: 4em;
-  margin-left: 10em;
-  max-width: 40em;
-  height: 900px;
-  overflow: hidden;
-}
-
-#Resume--And--Contact {
-  margin-top: 8em;
-  // display: inline-block !important
-
-
-}
-
-#Resume {
-  
-  
-}
-
-.View--Resume--Button {
-  @include resume--button();
-  // position: absolute;
-  // height: 50px;
-  // width: 50px
-  display: inline-block !important
-
-}
 
 .Contact {
-  p {
-    font-size: 20 px;
+  color: white;
+
+         /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+  /* Portrait and Landscape */
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    font-size: 15px;
+
+    
   }
-  // position: absolute;
-  // height: 50px;
-  // width: 50px
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+  /* Portrait and Landscape */
+  @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    font-size: 20px;
+  }
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+  /* Portrait and Landscape */
+  @media screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+  }
+
+  /* ----------- iPhone X ----------- */
+
+  /* Portrait and Landscape */
+  @media screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 812px) 
+    and (-webkit-min-device-pixel-ratio: 3) { 
+      // margin-top: 14em;
+      // font-size: 13px;
+  }
 
 }
-
 
 
 .Languages {
-  margin-top: 6em;
+  // margin-top: 6em;
+  color: white;
+  
+
+         /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+  /* Portrait and Landscape */
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    max-width: 300px;
+    margin-top: 10px;
+
+    h2 {
+      font-size: 20px;
+    }
+
+    
+
+
+    
+  }
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+  /* Portrait and Landscape */
+  @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    padding-left: 10px;
+    margin-top: 2em;
+
+  }
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+  /* Portrait and Landscape */
+  @media screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    margin-top: 2em;
+  }
+
+  /* ----------- iPhone X ----------- */
+
+  /* Portrait and Landscape */
+  @media screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 812px) 
+    and (-webkit-min-device-pixel-ratio: 3) { 
+      // margin-top: 14em;
+      // font-size: 13px;
+  }
 }
 
 // .Right--Container {
@@ -180,7 +451,77 @@
 // }
 
 .Bio {
+  color: white;
   
-  // }
+  h1 {
+    color: red
+  }
+
+  p {
+    color: white
+  }
+  
+         /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+  /* Portrait and Landscape */
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    max-width: 300px;
+    // padding: 20px
+
+    h1 {
+      font-size: 2em !important;
+    }
+  
+    h2 {
+  
+    }
+  
+    p {
+      color: white;
+      font-size: 16px !important;
+    }
+
+    a {
+      color: white
+    }    
+    
+  }
+  
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+  /* Portrait and Landscape */
+  @media only screen 
+  and (min-device-width: 600px) 
+  // and (max-device-width: 667px) 
+  // and (-webkit-min-device-pixel-ratio: 2)
+   { 
+  padding-left: 0;
+
+  }
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+  /* Portrait and Landscape */
+  @media screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    padding-left: 0;
+  }
+
+  /* ----------- iPhone X ----------- */
+
+  /* Portrait and Landscape */
+  @media screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 812px) 
+    and (-webkit-min-device-pixel-ratio: 3) { 
+      // margin-top: 14em;
+      // font-size: 13px;
+  }
 
 }

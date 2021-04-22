@@ -11,18 +11,18 @@ const About = () => {
           <div className="Left--Main">
             <div className="Bio">
               <h1 style={{textAlign: "left"}}>About</h1>
-              <p style={{fontSize: "19px", lineHeight: "2em"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p style={{fontSize: "19px", lineHeight: "2em"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
             <div className="Languages">
-              <h2>Languages</h2>
-              <p>Tech stack Tech stachTech stack Tech stach Tech stack Tech stach Tech stack Tech stach Tech stack Tech stach Tech stack Tech stachck Tech stach Tech stack Tech stach Tech stack Tech stach Tech stack Tech stach sdnajsdnjan jsndans</p>
+              <h2 className="Languages--Heading">Languages</h2>
+              <p>Tech stack Tech stachTech stack Tech stach Tech stack Tech stach Tech stack Tech stach Tech stack Tech stach Tech stack Tech stachck Tech </p>
             </div>
-            <div id="Resume--And--Contact" style={{display: "flex",flexDirection: "row", justifyContent: "space-between"}}>
-              <a className="View--Resume--Button" href="https://www.w3schools.com">View Resume</a>
+            <div className="Resume--And--Contact">
               <div className="Contact">
-              <h2>Contact</h2>
+              <h2 className="Contact--Heading">Contact</h2>
               <p id="Email">salartaeb@gmail.com</p>
               </div>
+              <a className="View--Resume--Button" href="https://www.w3schools.com">View Resume</a>
             </div>
           </div>
         </div> 
