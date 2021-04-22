@@ -2,7 +2,7 @@
 
 .About--Page {
   width: 100vw;
-  height: auto;
+  height: 100vh;
   overflow: hidden;
   display: block;
   margin-bottom: 1em;
@@ -48,10 +48,13 @@
     and (min-device-width: 375px) 
     and (max-device-width: 812px) 
     and (-webkit-min-device-pixel-ratio: 3) { 
-      // margin-top: 14em;
-      // font-size: 13px;
   }
 }
+
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+      
+    }
+
 
 @media all and (max-width: 768px) {
   h1 {
@@ -108,7 +111,6 @@
     and (min-device-width: 375px) 
     and (max-device-width: 812px) 
     and (-webkit-min-device-pixel-ratio: 3) { 
-      // margin-top: 14em;
 
   }
 }
@@ -136,7 +138,7 @@
 }
 
 .Left--Main {
-  height: 900px;
+  height: 100vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -185,23 +187,29 @@
     and (min-device-width: 375px) 
     and (max-device-width: 812px) 
     and (-webkit-min-device-pixel-ratio: 3) { 
-      // margin-top: 14em;
-      // font-size: 13px;
       margin-left: 10px !important;
       display: flex;
       flex-direction: column;
   }
 
-  @media only screen and (min-width: 768px) {
+  /* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
     width: 40em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-    justify-content: space-between
+    padding-left: auto;
+    padding-right: auto;
+}
+
+
+
+  @media only screen and (min-width: 768px) {
+    width: 30em;
+    padding-left: auto;
+    padding-right: auto;
+
+    justify-content: space-around
     
 
     // font-size: 40px
-
   }
 
 }
@@ -263,8 +271,6 @@
     and (min-device-width: 375px) 
     and (max-device-width: 812px) 
     and (-webkit-min-device-pixel-ratio: 3) { 
-      // margin-top: 14em;
-      // font-size: 13px;
   }
 }
 
