@@ -2,10 +2,10 @@
 
 .About--Page {
   width: 100vw;
-  height: 100vh;
+  height: 1200px;
   overflow: hidden;
   display: block;
-  margin-bottom: 1em;
+  // margin-bottom: 1em;
 
 
   /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
@@ -68,7 +68,6 @@
   font-family: 'Raleway', sans-serif;
   display: block;
   height: 101vh;  
-  
   text-align: left;
   cursor: none !important;
   overflow: hidden;
@@ -160,8 +159,6 @@
   /* Portrait and Landscape */
   @media only screen 
   and (min-device-width: 375px) 
-  // and (max-device-width: 667px) 
-  // and (-webkit-min-device-pixel-ratio: 2) 
   { 
     padding-left: 20px;
     padding-right: 20px;
@@ -194,7 +191,7 @@
 
   /* iPads (portrait) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-    width: 40em;
+    width: 50em;
     padding-left: auto;
     padding-right: auto;
 }
@@ -202,13 +199,11 @@
 
 
   @media only screen and (min-width: 768px) {
-    width: 30em;
-    padding-left: auto;
-    padding-right: auto;
-
+    width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+    // margin: auto;
     justify-content: space-around
-    
-
     // font-size: 40px
   }
 
@@ -232,7 +227,7 @@
   @media only screen 
   and (min-device-width: 600px) 
    {
-    // display: inline-block;
+    // display: inline-block; 
     // margin-top: 0;
 
     // &.Contact--Heading {
@@ -336,7 +331,7 @@
       font-size: 13px;
   }
   @media only screen and (min-width: 768px) {
-  padding: 2em 2em;
+  padding: 1em 1em;
 
 }
 }
@@ -369,15 +364,16 @@
   /* Portrait and Landscape */
   @media only screen 
   and (min-device-width: 600px) 
-  
    { 
+     
     h2 {
       font-size: 18px;
       text-decoration: underline;
-      padding-bottom: 2px;
+      padding-top: 20px;
       }
     p {
       font-size: 15px;
+      padding-bottom:20px;
     }
   }
 
@@ -400,6 +396,19 @@
     and (-webkit-min-device-pixel-ratio: 3) { 
   }
 
+    @media screen 
+    and (min-device-width: 768px) { 
+    h2 {
+      font-size: 30px;
+      text-decoration: none;
+      padding-bottom: 2px;
+      }
+    p {
+      font-size: 20px;
+    }
+    
+  }
+
 }
 
 
@@ -413,17 +422,9 @@
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
-    // max-width: 300px;
-    // margin-top: 10px;
-
     h2 {
       font-size: 20px;
     }
-
-    
-
-
-    
   }
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
@@ -452,8 +453,23 @@
     and (min-device-width: 375px) 
     and (max-device-width: 812px) 
     and (-webkit-min-device-pixel-ratio: 3) { 
-      // margin-top: 14em;
-      // font-size: 13px;
+    }
+
+    @media only screen and (min-width: 768px) {
+    width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+    // margin: auto;
+    justify-content: space-around;
+
+    h2 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 2;
+    }
   }
 }
 
