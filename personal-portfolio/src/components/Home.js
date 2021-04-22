@@ -24,7 +24,7 @@ const Home = () => {
     <Sidebar isOpen={isOpen} toggle={toggle} /> 
     <Navbar toggle={toggle}/>
     <div name="home" className="home">
-      <Particles  />
+      <Particles/>
       <div className="main">
       <h1><span style={{display: "inline-block"}}>Hi, I'm </span><span style={{display: "inline-block", marginLeft: "12px", color: "#630fe4"}}>Salar.</span></h1>
       <h1>Full Stack Developer.</h1>
