@@ -22,8 +22,9 @@ const About = () => {
               <h2 className="Contact--Heading">Contact</h2>
               <p id="Email">salartaeb@gmail.com</p>
               </div>
+              </div>
               <a className="View--Resume--Button" href="https://www.w3schools.com">View Resume</a>
-            </div>
+            
           </div>
         </div> 
         <div className="Right--Container">
