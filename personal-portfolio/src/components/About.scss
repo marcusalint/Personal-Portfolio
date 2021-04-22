@@ -1,10 +1,78 @@
+// scss variable(s)
+
+@mixin resume--button {
+  
+  border-color: #08FDD8;
+  padding: 2em 4em;
+  border-radius: 4px;
+  color: black;
+  background-color: #08FDD8;
+  font-size: 20px;
+  cursor: pointer;
+  pointer-events: auto;
+  text-decoration: none;
+  
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+  /* Portrait and Landscape */
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  }
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+  /* Portrait and Landscape */
+  @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    margin-top: 4em;
+    font-size: 13px;
+
+  }
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+  /* Portrait and Landscape */
+  @media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    margin-top: 10em;
+    font-size: 13px;
+  }
+
+  /* ----------- iPhone X ----------- */
+
+  /* Portrait and Landscape */
+  @media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 812px) 
+    and (-webkit-min-device-pixel-ratio: 3) { 
+      margin-top: 14em;
+      font-size: 13px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: 40px !important;
+  }
+}
+
+
 
 .About--Page {
   width: 100vw;
-  height: 1000px;
+  
+  height: 101vh;
   overflow: hidden;
   display: block;
   // text-align: center;
+  
   
 
   h1 {
@@ -26,14 +94,15 @@
   font-family: 'Raleway', sans-serif;
   // display: flex; 
   display: block;
-  height: 1000px;
+  height: 101vh;
   // flex-direction: row;
   // justify-content: space-between;
   text-align: left;
   // margin: "2em"
   // margin-right: 4em;
   // margin-left: 4em;
-  margin-top: 2em;
+  cursor: none !important;
+  
   overflow: hidden;
 
   
@@ -47,7 +116,8 @@
 .Left--Container {
   background-color: rgb(33, 33, 33, 0.95);
   width: 60em;
-  min-height: 1000px;
+  min-height: 101vh;
+  overflow: hidden;
   // top: 10em;
   // left: 5em; 
   border-radius: 4px;
@@ -56,27 +126,61 @@
   position: absolute;
   z-index: 5;
   pointer-events: none;
-  
-  
-
+  // border-right-style: dotted;
+  // border-right-color: white;
 }
 
 .Left--Main {
   margin-top: 4em;
   margin-left: 10em;
   max-width: 40em;
-  height: 1000px;
+  height: 900px;
+  overflow: hidden;
 }
+
+#Resume--And--Contact {
+  margin-top: 8em;
+  // display: inline-block !important
+
+
+}
+
+#Resume {
+  
+  
+}
+
+.View--Resume--Button {
+  @include resume--button();
+  // position: absolute;
+  // height: 50px;
+  // width: 50px
+  display: inline-block !important
+
+}
+
+.Contact {
+  p {
+    font-size: 20 px;
+  }
+  // position: absolute;
+  // height: 50px;
+  // width: 50px
+
+}
+
+
+
+.Languages {
+  margin-top: 6em;
+}
+
+// .Right--Container {
+  
+// }
 
 .Bio {
   
-}
+  // }
 
-.Languages {
-  margin-top: 10em;
 }
-
-.Right--Container {
-  
-}
-

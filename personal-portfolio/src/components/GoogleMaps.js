@@ -10,8 +10,8 @@ const AnyReactComponent = ({ text }) => <div>{text}</div>;
 class SimpleMap extends Component {
   static defaultProps = {
     center: {
-      lat: 49.2827,
-      lng: -123.1207
+      lat: 48.850657,
+      lng: -139.872177
     },
     zoom: 5
   };
@@ -47,12 +47,12 @@ class SimpleMap extends Component {
       },
   ];
 
+    const mapHeight = 101
+    console.log(window.innerHeight, 'this is window innerheight')
 
     const googleMapsStyles = {
-      height: "1000px",
+      height: `${mapHeight}vh`,
       width: "100vw"
-
-  
     };
 
     return (
@@ -329,15 +329,18 @@ class SimpleMap extends Component {
         ]
     }
 ],
-disableDefaultUI: true,
+          disableDefaultUI: true,
+          gestureHandling: "none",
+          zoomControl: false
             
-  
          }}
           bootstrapURLKeys={{ key: "AIzaSyADOuKrkVg_Q_yfkY5HlRLaszNV3PprZB4" }}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
           disableDefaultUI={true}
-
+          gestureHandling= "none"
+          zoomControl= {false}
+          // scrollWheel={false}
         >
           <div style={googleMapsMarkerStyles}
             lat={49.2827}
