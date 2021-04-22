@@ -11,17 +11,21 @@ const HeroBackground = () => {
     params={{
 	    "particles": {
 	        "number": {
-	            "value": 50,
+	            "value": 40,
 	        },
 	        "size": {
 	            "value": 3
-	        }
+	        },
+					// "color":{"value":"#08FDD8"},
 	    },
+			
+			
 	    "interactivity": {
+				"detect_on": "window", 
 	        "events": {
 	            "onhover": {
 	                "enable": true,
-	                "mode": "repulse"
+	                "mode": "repulse",				
 	            }
 	        }
 	    }
