@@ -159,9 +159,6 @@ return (
       <div>
         <img className="Modal--Main--Image" src={selectedProject && selectedProject.carouselImageTwo} />
       </div>
-      <div>
-        <img className="Modal--Main--Image" src={selectedProject && selectedProject.carouselImageThree} />
-      </div>
     </Carousel>   
       <div id="Modal--Text">
       <h2>{selectedProject && selectedProject.name}</h2>
