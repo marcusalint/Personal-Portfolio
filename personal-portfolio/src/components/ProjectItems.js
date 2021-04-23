@@ -77,9 +77,9 @@ import {useMediaQuery} from './hooks/useMediaQuery';
     id: '&',
     name: "Portfolio Site",
     builtWith: "React",
-    image: "",
-    carouselImageOne: "https://github.com/marcusalint/tinyapp/raw/main/docs/Urls-Page.png?raw=true",
-    carouselImageTwo: "https://github.com/marcusalint/tinyapp/raw/main/docs/Login-Page.png?raw=true",
+    image: "https://github.com/marcusalint/Personal-Portfolio/blob/master/personal-portfolio/Docs/Screen%20Shot%202021-04-23%20at%203.51.56%20PM.png?raw=true",
+    carouselImageOne: "https://github.com/marcusalint/Personal-Portfolio/blob/master/personal-portfolio/Docs/Screen%20Shot%202021-04-23%20at%203.51.56%20PM.png?raw=true",
+    carouselImageTwo: "https://github.com/marcusalint/Personal-Portfolio/blob/master/personal-portfolio/Docs/Screen%20Shot%202021-04-23%20at%203.52.07%20PM.png?raw=true",
     description: "Portfolio site for my projects.",
     githubUrl: 'https://github.com/marcusalint/Personal-Portfolio/tree/master/personal-portfolio',
     technologies: "React, React-Router, SASS"
