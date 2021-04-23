@@ -10,6 +10,7 @@ import {useMediaQuery} from './hooks/useMediaQuery';
   {
     id: '1',
     name: "ReLeaf",
+    builtWith: "React | PostgresQl | Express",
     image: "https://i.imgur.com/l00Hbky.png",
     carouselImageOne: "https://github.com/marcusalint/ReLeaf/raw/master/docs/releaf_campaign.gif?raw=true",
     carouselImageTwo: "https://github.com/marcusalint/ReLeaf/raw/master/docs/releaf_search.gif?raw=true",
@@ -21,16 +22,18 @@ import {useMediaQuery} from './hooks/useMediaQuery';
     {
     id: '2',
     name: "Mapper",
+    builtWith: "jQuery | PostgresQL | NodeJS",
     image: "https://i.imgur.com/gpZt2Hf.png",
     carouselImageOne: "https://github.com/ngampit/map-midterm-project/raw/master/Docs/Create-Delete-Marker.gif?raw=true",
     carouselImageTwo: "https://github.com/ngampit/map-midterm-project/raw/master/Docs/Favourite_Delete%20Map.gif?raw=true",
     description: "Mapper is a web app that utilizes the Google Maps Api to allow users to create and save maps with custom markers, each marker having its own title and description. Users can favourite their own or other user generated maps as well contributing to other user’s maps.",
     githubUrl: 'https://github.com/marcusalint/Mapper',
-    technologies: "Express, NodeJS, PostgresQL, Jquery, Bootstrap and SASS"
+    technologies: "Express, NodeJS, PostgresQL, jQuery, Bootstrap and SASS"
   },
   {
     id: '3',
     name: "Scheduler",
+    builtWith: "React",
     image: "https://raw.githubusercontent.com/marcusalint/scheduler/master/Images/Regular%20View%20of%20Appointments.png",
     carouselImageOne: "https://github.com/marcusalint/scheduler/raw/master/Images/Form%20Validation%20and%20Interview%20Cancellation.png?raw=true",
     carouselImageTwo: "https://github.com/marcusalint/scheduler/raw/master/Images/Book%20Interview.png?raw=true",
@@ -41,6 +44,7 @@ import {useMediaQuery} from './hooks/useMediaQuery';
   {
     id: '4',
     name: "Jungle Rails",
+    builtWith: "Ruby | Rails",
     image: "https://raw.githubusercontent.com/marcusalint/jungle-rails/master/docs/front-page.png",
     carouselImageOne: "https://github.com/marcusalint/jungle-rails/raw/master/docs/cart-page.png?raw=true",
     carouselImageTwo: "https://github.com/marcusalint/jungle-rails/raw/master/docs/new-product.png?raw=true",
@@ -51,6 +55,7 @@ import {useMediaQuery} from './hooks/useMediaQuery';
   {
     id: '5',
     name: "Tweeter",
+    builtWith: "jQuery",
     image: "https://github.com/marcusalint/tweeter/raw/master/public/images/Header.png?raw=true",
     carouselImageOne: "https://github.com/marcusalint/tweeter/raw/master/public/images/SubmitTweet.png?raw=true",
     description: "Single page Twitter clone application",
@@ -60,12 +65,24 @@ import {useMediaQuery} from './hooks/useMediaQuery';
   {
     id: '6',
     name: "TinyApp",
+    builtWith: "Javascript | NodeJS | Express ",
     image: "https://github.com/marcusalint/tinyapp/raw/main/docs/Create-New-TinyURL.png?raw=true",
     carouselImageOne: "https://github.com/marcusalint/tinyapp/raw/main/docs/Urls-Page.png?raw=true",
     carouselImageTwo: "https://github.com/marcusalint/tinyapp/raw/main/docs/Login-Page.png?raw=true",
     description: "TinyApp is a full stack web application built with Node and Express that allows users to shorten long URLs (à la bit.ly).",
     githubUrl: 'https://github.com/marcusalint/tinyapp',
     technologies: "Express, Node.js, EJS, Javascript"
+  },
+    {
+    id: '&',
+    name: "Portfolio Site",
+    builtWith: "React",
+    image: "",
+    carouselImageOne: "https://github.com/marcusalint/tinyapp/raw/main/docs/Urls-Page.png?raw=true",
+    carouselImageTwo: "https://github.com/marcusalint/tinyapp/raw/main/docs/Login-Page.png?raw=true",
+    description: "Portfolio site for my projects.",
+    githubUrl: 'https://github.com/marcusalint/Personal-Portfolio/tree/master/personal-portfolio',
+    technologies: "React, React-Router, SASS"
   },
    
 ]
@@ -139,7 +156,7 @@ return (
         <div id="Card--Overlay">
           <div className="Card--Text">
             <h3>{project.name}</h3>
-            <p>{project.description}</p>
+            <p>{project.builtWith}</p>
           </div>
           <button id="View--More--Button" onClick={() => expandModal(project)}>View More</button>
         </div>
