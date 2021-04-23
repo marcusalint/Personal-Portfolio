@@ -154,7 +154,7 @@ return (
         backgroundImage: `url(${project.image})`, textAlign: "flex-start", padding: "1em",margin: "2em", width: "100%", height: "20em", borderRadius: "4px", overflow: "hidden", 
         }}>
         <div id="Card--Overlay">
-          <div className="Card--Text">
+          <div id="Card--Text">
             <h3>{project.name}</h3>
             <p>{project.builtWith}</p>
           </div>
