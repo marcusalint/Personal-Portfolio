@@ -22,7 +22,7 @@ const About = () => {
                 <p id="Email">salartaeb@gmail.com</p>
               </div>
               </div>
-              <a className="View--Resume--Button" href="https://drive.google.com/file/d/1jEP4w9Vz3We85HZoJ-1h3yH7o7-7omG-/view?usp=sharing">View Resume</a>
+              <a className="View--Resume--Button" href="https://drive.google.com/file/d/1QPW_q8ijT0snXO3wLBHvFIL2faG_3lW6/view?usp=sharing">View Resume</a>
           </div>
         </div> 
         <div className="Right--Container">
