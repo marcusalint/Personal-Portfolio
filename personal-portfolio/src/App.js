@@ -17,6 +17,7 @@ import {
 function App() {
 
   return ( 
+    <div>
     <Router>
       <Switch>
         <Route  path="/" exact component={Home} />
@@ -25,7 +26,7 @@ function App() {
         <Route  path="/projects" exact component={Projects} />
       </Switch>
     </Router>
-    
+    </div>
   );
 }
 
