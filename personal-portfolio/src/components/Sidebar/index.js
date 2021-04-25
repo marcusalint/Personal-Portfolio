@@ -18,13 +18,13 @@ const SideBar = ({isOpen, toggle}) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="/home" onClick={toggle}>
+          <SidebarLink to="home" smooth={true} duration={500} spy={true} exact='true' offset={-80} activeClass="active" onClick={toggle}>
             Home
           </SidebarLink>
-          <SidebarLink to="/projects" onClick={toggle}>
+          <SidebarLink to="projects" smooth={true} duration={500} spy={true} exact='true' offset={-80} activeClass="active" onClick={toggle}>
             Projects
           </SidebarLink>
-            <SidebarLink to="/about" onClick={toggle}>
+            <SidebarLink to="About" smooth={true} duration={500} spy={true} exact='true' offset={-80} activeClass="active" onClick={toggle}>
             About
           </SidebarLink>
         </SidebarMenu>
