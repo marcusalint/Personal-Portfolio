@@ -46,7 +46,7 @@ export const SidebarMenu = styled.ul `
 
 `
 
-export const SidebarLink = styled(LinkRouter) `
+export const SidebarLink = styled(LinkSmoothScroll) `
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,7 +71,7 @@ export const SideBtnWrap = styled.div `
 
 `
 
-export const SidebarRoute = styled(LinkRouter) `
+export const SidebarRoute = styled(LinkSmoothScroll) `
   border-radius: 50px;
   background: #01bf71;
   white-space: nowrap;
