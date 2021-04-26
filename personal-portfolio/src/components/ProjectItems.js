@@ -166,7 +166,7 @@ return (
     style={modalStyles.container(lgMedia)}
     >
     <div id="Modal--Container">
-    <Carousel showThumbs={false} showArrows={true} className="Carousel">
+    <Carousel showThumbs={true} showArrows={true} className="Carousel">
         <div>
         <img className="Modal--Main--Image" src={selectedProject && selectedProject.image} />
       </div>
