@@ -4,7 +4,7 @@ import GoogleMaps from './GoogleMaps'
 
 const About = () => {
   return (
-    <div id="About" className="About--Page" >
+    <div className="About" className="About--Page" >
       <div className="Content--Container">
         <div className="Left--Container">
           <div className="Left--Main">
@@ -25,7 +25,7 @@ const About = () => {
               <a className="View--Resume--Button" href="https://drive.google.com/file/d/1QPW_q8ijT0snXO3wLBHvFIL2faG_3lW6/view?usp=sharing">View Resume</a>
           </div>
         </div> 
-        <div className="Right--Container">
+        <div id="Right--Container">
           <GoogleMaps/>
         </div>
       </div>

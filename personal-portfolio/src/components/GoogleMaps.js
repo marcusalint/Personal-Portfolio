@@ -51,9 +51,7 @@ class SimpleMap extends Component {
 
     const googleMapsStyles = {
       height: `${mapHeight}vh`,
-      width: "100vw",
-      
-      
+      width: "100vw",  
     };
 
     return (

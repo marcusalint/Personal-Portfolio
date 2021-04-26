@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
 
+/* Debugger Code */
+
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
+
 body {
   margin: 0;
   padding: 0;
@@ -9,9 +17,24 @@ body {
   display: flex;
   font-family: 'Raleway', sans-serif;
   height: 100%;
+  width: 100%;
   overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5){
+
+  html,
+  body{
+    width:100%;
+    overflow-x:hidden;
+  }
+
 }
