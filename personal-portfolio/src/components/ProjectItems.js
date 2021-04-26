@@ -151,7 +151,7 @@ return (
     >
     {projects.map((project) => (
       <Grid item xl={3} lg={3} md={3} sm={4} xs={12} key={project.id} style={{
-        backgroundImage: `url(${project.image})`, textAlign: "flex-start", padding: "1em",margin: "2em", width: "100%", height: "20em", borderRadius: "4px", overflow: "hidden", 
+        backgroundImage: `url(${project.image})`, textAlign: "flex-start", padding: "1em",margin: "1em", width: "100%", height: "20em", borderRadius: "4px", overflow: "hidden", 
         }}>
         <div id="Card--Overlay">
           <div id="Card--Text">
